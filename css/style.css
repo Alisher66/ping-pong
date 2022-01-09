@@ -1,0 +1,64 @@
+body{
+    background: #ccc;
+}
+
+.wrap {
+    
+}
+
+.game_container{
+    background: #fff;
+    width: 800px;
+    height: 400px;
+    margin: 20% auto;
+    position: relative;
+}
+
+.game_container .line{
+    content: "";
+    width: 2px;
+    height: 400px;
+    background-color: #000;
+    top: 0;
+    left: 399px;
+    position: absolute;
+    z-index: 5;
+}
+
+.game_container .player1{
+    position: absolute;
+    width: 20px;
+    height: 80px;
+    background-color: black;
+    top: 160px;
+    left: 0;
+}
+
+.game_container .player2{
+    position: absolute;
+    width: 20px;
+    height: 80px;
+    background-color: black;
+    top: 160px;
+    right: 0;
+}
+
+.game_container .ball{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    top: 190px;
+    right: 390px;
+    z-index: 10;
+}
+.game_container .score{
+    display: flex;
+    width: 50px;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 375px;
+    font-size: 20px;
+}
